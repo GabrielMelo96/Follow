@@ -1,5 +1,5 @@
 #include <AFMotor.h> // https://learn.adafruit.com/adafruit-motor-shield/library-install
-//Main
+//Maina
 bool debugSen = false;
 bool debugMotor = false;
 bool debugMark = false;
@@ -152,7 +152,7 @@ void detectaMarcas(){
       Serial.println(THRESHMARK);
     }
     switch(state) {
-      case 3 :
+      case 10 :
         delay(500);
         motorEsq.setSpeed(0);
         motorDir.setSpeed(0);
@@ -188,7 +188,7 @@ void detectaMarcas(){
 //#define Ki 0.0
 #define Kp 250.0// var angular de 0 - 2123
 #define Kd 10.0
-#define Ki 0.0
+#define Ki 2.0
 
 //tempo de amostragem
 #define T 5
